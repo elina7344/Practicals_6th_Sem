@@ -1,0 +1,12 @@
+AIM:
+To read, access and display digital image
+
+PROGRAM:
+img = imread ('D:\flower.jpg');
+figure;
+title('Original image')
+imshow(img);
+img1 = rgb2gray(img);
+figure;
+title('Grayscale image')
+imshow(img1)
