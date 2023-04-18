@@ -1,0 +1,21 @@
+AIM:
+Implementing Basic Linux Commands
+
+COMMANDS:
+1. pwd
+2. ls
+3. cd
+4. mkdir folder_name
+5. cd..
+6. cd-
+7. cat > os.txt
+8. ctrl + d
+9. cat os.txt
+10. cat os.txt os1.txt > result.txt
+11. cat result.txt
+12. cp result.txt /root/dir1/x1
+13. mv result.txt /root/dir2
+14. ls - R
+15. find/folder name
+16. la - an
+17. df
