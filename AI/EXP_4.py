@@ -1,4 +1,5 @@
 #Best First Search
+# code taken from Programiz
 
 # A Node class for GBFS Pathfinding
 class Node:
