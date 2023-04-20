@@ -137,6 +137,7 @@ print(path[(len(path)-1)])
 
 
 #A*Search
+# https://stackabuse.com/courses/graphs-in-python-theory-and-implementation/lessons/a-star-search-algorithm/
 
 from collections import deque
 
