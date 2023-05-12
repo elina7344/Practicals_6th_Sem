@@ -2,7 +2,8 @@
 /*
 ALGORITHM
 QUES: find the largest sum of K consecutive entries, given an array of size N. 
-1. Add the first K components together and save the result in the currentSum variable. Because this is the first sum, it is also the current maximum; thus, save it in the variable maximumSum.
+1. Add the first K components together and save the result in the currentSum variable.
+Because this is the first sum, it is also the current maximum; thus, save it in the variable maximumSum.
 2. As the window size is K, we move the window one place to the right and compute the sum of the items in the window.
 3. Update the maximum if the currentSum is greater than the maximumSum, and repeat step 2.
 */
