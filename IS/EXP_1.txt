@@ -3,19 +3,52 @@ Implementing Basic Linux Commands
 
 COMMANDS:
 1. pwd
+------> print current working directory
+
 2. ls
+------> print the list / contents of the given directory
+
 3. cd
+------> change directory
+
 4. mkdir folder_name
+------> makes a new folder or directory
+
 5. cd..
+------> gets back to the root directory
+
 6. cd-
+------> to come back to the previous directory we were at before
+
 7. cat > os.txt
+------> to create new file
+
 8. ctrl + d
-9. cat os.txt
+------> saves and closes the file
+
+9. cat os1.txt
+------> create another file
+
 10. cat os.txt os1.txt > result.txt
+------> concatenates two files and displays content in the new file i.e. result.txt
+
 11. cat result.txt
+------> prints the contents of result.txt
+
 12. cp result.txt /root/dir1/x1
+------> makes copy of result.txt and shifts to folder names x1
+
 13. mv result.txt /root/dir2
+------> move result.txt to dir 2
+
 14. ls - R
+------> list of all root inside directory x2
+
 15. find/folder name
-16. la - an
+------> to find in a particular folder
+
+16. ls - an
+------> metadata about the files
+
 17. df
+------> disk space of all files
