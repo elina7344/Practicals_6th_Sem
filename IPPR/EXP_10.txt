@@ -1,0 +1,13 @@
+AIM:
+Feature extraction
+
+PROGRAM:
+
+clc 
+clear; 
+close; 
+S= imread ("D:\ImageProcessing\nift.jpg"); 
+fobj = imdetect_FAST(S); 
+title("Extracted image"); 
+imshow(S); 
+plotfeature( fobj );
