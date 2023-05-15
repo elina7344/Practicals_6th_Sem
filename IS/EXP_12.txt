@@ -1,0 +1,29 @@
+DDL commands:
+Data Definition Language is used to modify and create schema of the databsed
+1) CREATE : used to create databases, tables, triggers and other database objects
+2) DROP : Delete / remove database objects from SQL database
+3) ALTER : modifies the existing structure of the database
+4) TRUNCATE : removes rows from a table
+5) RENAME : used to change the name of the table
+
+CODES:
+
+SQL> create table hospital(hos_name varchar(20),hos_place varchar(15),hos_mob number(10),hos_patient varchar(20));
+
+Table created.
+
+SQL> alter table hospital add patient_ID number(10);
+
+Table altered.
+
+SQL> truncate table hospital;
+
+Table truncated.
+
+SQL> rename hospital to hos_pi_tal;
+
+Table renamed.
+
+SQL> drop table hospital;
+
+Table dropped.
