@@ -1,0 +1,29 @@
+TCL commands: (Transaction Control Language)
+* Transaction - A single unit of work in a database is formed after a set of consecutive executions
+* manages the transactions that take place in a database.
+* Can only be used with DML commands like INSERT, DELETE and UPDATE
+
+1) COMMIT : used to save all the transaction-related changes permanently to the disk.
+2) SAVEPOINT : we can save these different parts of the same transaction using different names.
+3) ROLLBACK : used to undo a transaction that have been saved already but deleted mistakenly
+
+CODE:
+
+SQL> DELETE from hos_pi_tal where ID = 7;
+
+1 row deleted.
+
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> SAVEPOINT del;
+
+Savepoint created.
+
+SQL> ROLLBACK;
+
+Rollback complete.
+
+
+
