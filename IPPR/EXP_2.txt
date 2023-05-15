@@ -15,7 +15,7 @@ for i=1:n:h
     for j=1:n:w
         for k=0:n-1
             for l=0:n-1
-                im(i+k,j+l) = img(i.j);
+                im(i+k,j+l) = img(i,j);
             end
         end
     end
