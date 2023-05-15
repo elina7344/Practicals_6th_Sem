@@ -1,0 +1,8 @@
+DCL Commands: (Data Control Language)
+* used to access stored data
+* either GRANT or REVOKE the required access from a user
+* controls access info
+
+1) GRANT : Provides Privilege to the user
+2) REVOKE : removes a privilege from the user
+
