@@ -1,0 +1,41 @@
+AIM:
+Basic networking commands
+
+COMMANDS:
+
+1) IPCONFIG:
+- gives an overview about the network settings
+- stands for IP address configuration
+
+2) NBTSTAT:
+- Diagnostic tool for troubleshooting NetBIOS problem
+
+3) HOSTNAME:
+- Displays the hostname of the server
+
+4) PING:
+- works like an echo protocol
+- sends 4 packets to the destination then destination returns the packets to source
+- if packets are lost then there are errors otherwise source and destination can communicate successfully
+
+5) TRACERT:
+- used to trace the route
+- during the transmission of data packets are sent to the destination
+- destination returns the hop counts
+- these hops can help to troubleshoot network issues
+
+6) NETSTAT:
+- displays an overview of all the network connections in the device
+- Shows details of connection protocol, address and current state of the network
+
+7) ARP (Address Resolution Protocol):
+- used to access the mapping structure of IP addresses to the MAC addresses
+
+8) SYSTEMINFO:
+- gives the system's s/w and h/w details
+
+9) GETMAC:
+- Shows the MAC address
+
+10) TASKLIST:
+- view a list of running commands / tasks
