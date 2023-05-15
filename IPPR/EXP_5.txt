@@ -1,0 +1,51 @@
+AIM:
+1. To understand how frequency distribution can be used to represent an image. 
+2. To study the correlation between the visual quality of an image with its histogram. 
+
+PROGRAM 1:
+
+clc ; 
+clear; 
+close; 
+img= imread ('D:\cameraman.jpg'); 
+img=rgb2gray(img); 
+[count,cells ]= imhist (img); // compute histogram
+subplot(2,2,1); 
+title('Original image'); 
+imshow(img); 
+subplot(2,2,2); 
+plot2d3 ('gnn' , cells , count ) 
+title('Histogram plot for original image'); 
+Iheq = imhistequal(img); 
+[count,cells ]= imhist (Iheq); // compute histogram equalization
+subplot(2,2,3); 
+title('Histogram Equalized image'); 
+imshow(Iheq); 
+subplot(2,2,4); 
+plot2d3 ('gnn' , cells , count ) 
+title('Histogram plot for histogram equalized image'); 
+
+PROGRAM 2:
+
+clc ; 
+clear; 
+close; 
+img= imread ('D:\cameraman.jpg'); 
+img=rgb2gray(img); 
+//I = imresize (img ,[256 ,256]) ; 
+[ count , cells ]= imhist (img) ; 
+Iheq = imhistequal(img); 
+[count1,cells1 ]= imhist (Iheq); 
+// correlation between original image and Histogram equalized image
+ corrbsameimg = corr2(img,Iheq) 
+disp(corrbsameimg); 
+// correlation between the histograms of original image 
+x = xcorr ( count , count ) ; 
+//correlation between the histogram of original image and equalized image 
+x1 = xcorr ( count , count1 ) ; 
+subplot(2,1,1); 
+plot2d3 ( 'gnn' ,1: length ( x ) ,x ,2); 
+title('correlation b/w histograms of original image'); 
+subplot(2,1,2); 
+plot2d3 ('gnn' ,1: length ( x1 ) ,x1 ,2); 
+title('correlation b/w histogram of original and equalized image')
