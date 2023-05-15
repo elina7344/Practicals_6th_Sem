@@ -1,0 +1,62 @@
+AIM: Neighbourhood Operations
+1) i) linear filtering  ii) Non-Linear filtering
+3) Effect of size of neighbourhood on processing
+
+PROGRAM 1:
+
+I = rgb2gray(imread('D:\flower.jpg'));
+I_noise=imnoise(I,'salt & pepper');
+subplot(2,3,1);
+title('original image')
+imshow(I)
+subplot(2,3,2);
+title('noisy image')
+imshow(I_noise)
+flinear1=1/25*ones(5,5);
+Ilinear1=imfilter(I_noise,flinear1);
+subplot(2,3,3);
+title('Linear average filtered ')
+imshow(Ilinear1)
+hsize=[5,5];
+sigma=1;
+flinear2=fspecial('gaussian',hsize,sigma );
+Ilinear2=imfilter(I_noise,flinear2);
+subplot(2,3,4);
+title('Linear Gaussian Filtered')
+imshow(Ilinear2)
+fnonlinear=[3,3];
+Inonlinear=immedian(I_noise,fnonlinear);
+subplot(2,3,5);
+title('Median Filtered(Non-Linear)')
+imshow(Inonlinear)
+
+PROGRAM 2:
+
+clc;
+clear all;
+close all;
+I = rgb2gray(imread('D:\flower.jpg'));
+I_noise=imnoise(I,'salt & pepper');
+FilterSize = [3 3];
+I_3x3 = immedian ( I_noise , FilterSize ) ;
+I_5x5 = immedian ( I_noise ,[5 5]) ;
+I_7x7 = immedian ( I_noise ,[7 7]) ;
+I_9x9 = immedian ( I_noise ,[9 9]) ;
+subplot(2,3,1);
+title('original image')
+imshow(I)
+subplot(2,3,2);
+title('noisy image')
+imshow(I_noise)
+subplot(2,3,3);
+title('Filter size 3x3')
+imshow(I_3x3)
+subplot(2,3,4);
+title('Filter size 5x5')
+imshow(I_5x5)
+subplot(2,3,5);
+title('Filter size 7x7')
+imshow(I_7x7)
+subplot(2,3,6);
+title('Filter size 9x9')
+imshow(I_9x9)
